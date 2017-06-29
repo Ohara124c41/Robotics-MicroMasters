@@ -30,7 +30,7 @@ function [axang] = rotm2axang(R)
         vec(2,3) = sqrt(((R(3,3)+1)/2));
         end
         theta = [theta;theta];
-        %使用的时候判断一下rx，ry，rz之间正负关系，这里不对  3个同号1种情况，2个同号3种情况 一共需要四组
+       
     else
     vec(1) = (R(3,2) - R(2,3)) / (2 * sin(theta));
     vec(2) = (R(1,3) - R(3,1)) / (2 * sin(theta));
